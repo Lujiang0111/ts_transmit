@@ -4,10 +4,10 @@
 #include <memory>
 #include "ts_transmit_c.h"
 
-#define TS_TRANSMIT_BEGIN_NAMESPACE namespace tstm {
-#define TS_TRANSMIT_END_NAMESPACE }
+#define TSTM_BEGIN_NAMESPACE namespace tstm {
+#define TSTM_END_NAMESPACE }
 
-TS_TRANSMIT_BEGIN_NAMESPACE
+TSTM_BEGIN_NAMESPACE
 
 class ITransmitter
 {
@@ -17,8 +17,8 @@ public:
     virtual int GetProgress() = 0;
 };
 
-TS_TRANSMIT_API std::shared_ptr<ITransmitter> CreateTransmitter(const char *json_param);
+TSTM_API std::shared_ptr<ITransmitter> CreateTransmitter(const char *json_param);
 
-TS_TRANSMIT_END_NAMESPACE
+TSTM_END_NAMESPACE
 
 #endif // !TS_TRANSMIT_INCLUDE_TS_TRANSMIT_H_

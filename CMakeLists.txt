@@ -59,6 +59,9 @@ endif()
 
 message(STATUS "os name=${os_name}, os version=${os_version}, os arch=${os_arch}, build type=${CMAKE_BUILD_TYPE}")
 
+# 添加定义
+target_compile_definitions(${PROJECT_NAME} PRIVATE TS_TRANSMIT_USE_JEMALLOC=1)
+
 # 指定目标的包含目录
 target_include_directories(${PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
@@ -90,6 +93,8 @@ if(os_name MATCHES "windows")
 
     # 导出符号
     target_compile_definitions(${PROJECT_NAME} PRIVATE TS_TRANSMIT_API_EXPORT=1)
+
+    target_link_libraries(${PROJECT_NAME} PRIVATE ws2_32)
 else()
 endif()
 

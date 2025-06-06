@@ -1,22 +1,22 @@
-﻿#include "lib_log.h"
+﻿#include "utils/lib_log.h"
 
-TS_TRANSMIT_BEGIN_NAMESPACE
+TSTM_BEGIN_NAMESPACE
 
 static void DefaultLogCallback(void *opaque, int level, const char *file_name, int file_line, const char *content, size_t len)
 {
     lccl::log::Levels lccl_level = lccl::log::Levels::kDebug;
     switch (level)
     {
-    case TS_TRANSMIT_LOG_DEBUG:
+    case TSTM_LOG_DEBUG:
         lccl_level = lccl::log::Levels::kDebug;
         break;
-    case TS_TRANSMIT_LOG_INFO:
+    case TSTM_LOG_INFO:
         lccl_level = lccl::log::Levels::kInfo;
         break;
-    case TS_TRANSMIT_LOG_WARN:
+    case TSTM_LOG_WARN:
         lccl_level = lccl::log::Levels::kWarn;
         break;
-    case TS_TRANSMIT_LOG_ERROR:
+    case TSTM_LOG_ERROR:
         lccl_level = lccl::log::Levels::kError;
         break;
     default:
@@ -45,4 +45,4 @@ void LibLogContent(int level, const char *file_name, int file_line, const char *
     lib_log_cb(lib_log_opaque, level, file_name, file_line, content, len);
 }
 
-TS_TRANSMIT_END_NAMESPACE
+TSTM_END_NAMESPACE

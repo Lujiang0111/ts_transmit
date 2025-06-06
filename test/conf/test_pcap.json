@@ -1,5 +1,13 @@
 {
     "id": "test_pcap",
-    "input": {},
-    "output": {}
+    "nodes": [
+        {
+            "name": "pcap_file_input",
+            "param": {
+                "file_name": "e:/Test/record/any_any_192.165.52.172_20250524_110504/5_20250524_110730.pcap",
+                "loop": -1,
+                "real_time": true
+            }
+        }
+    ]
 }

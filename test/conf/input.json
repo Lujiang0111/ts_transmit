@@ -1,0 +1,25 @@
+{
+    "id": "test_pcap",
+    "sleep_ns": 100000,
+    "nodes": [
+        {
+            "name": "pcap_file_input",
+            "param": {
+                "file_name": "e:/Test/record/any_any_192.165.52.172_20250524_110504/5_20250524_110730.pcap",
+                "hint_ip": null,
+                "hint_port": 17000,
+                "loop": -1,
+                "real_time": true
+            }
+        },
+        {
+            "name": "udp_output",
+            "param": {
+                "dst_ip": "127.0.0.1",
+                "dst_port": 18000,
+                "local_ip": "127.0.0.1",
+                "ttl": 64
+            }
+        }
+    ]
+}

@@ -3,6 +3,7 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <thread>
 #include "ts_transmit.h"
 
 struct Param
@@ -85,6 +86,11 @@ int main(int argc, char **argv)
     if (!transmitter)
     {
         return 0;
+    }
+
+    while (app_running)
+    {
+        std::this_thread::sleep_for(std::chrono::seconds(1));
     }
 
     return 0;

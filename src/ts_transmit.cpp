@@ -1,6 +1,6 @@
 ﻿#include "transmitter.h"
 
-TS_TRANSMIT_BEGIN_NAMESPACE
+TSTM_BEGIN_NAMESPACE
 
 std::shared_ptr<ITransmitter> CreateTransmitter(const char *json_param)
 {
@@ -13,7 +13,7 @@ std::shared_ptr<ITransmitter> CreateTransmitter(const char *json_param)
     return transmitter;
 }
 
-TS_TRANSMIT_END_NAMESPACE
+TSTM_END_NAMESPACE
 
 TransmitterHandle CreateTransmitterHandle(const char *json_param)
 {

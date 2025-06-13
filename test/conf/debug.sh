@@ -2,8 +2,8 @@
 shell_path=$(
     cd "$(dirname "$0")" || exit
     pwd
-)/
-lib_path=${shell_path}lib/
+)
+lib_path=${shell_path}/lib
 project=ts_transmit_test
 
 ulimit -n 65536

@@ -7,7 +7,7 @@
 #include "token/token_data.h"
 #include "utils/alloc_core.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 class Token
 {
@@ -45,6 +45,6 @@ private:
     std::vector<int64_t, CoreAllocator<int64_t>> props_;
 };
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END
 
 #endif // !TS_TRANSMIT_INTERNAL_PACKET_PACKET_H_

@@ -1,6 +1,6 @@
 ﻿#include "utils/lib_log.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 static void DefaultLogCallback(void *opaque, int level, const char *file_name, int file_line, const char *content, size_t len)
 {
@@ -45,4 +45,4 @@ void LibLogContent(int level, const char *file_name, int file_line, const char *
     lib_log_cb(lib_log_opaque, level, file_name, file_line, content, len);
 }
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END

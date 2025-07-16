@@ -6,7 +6,7 @@
 #include "lccl/socket.h"
 #include "node/base_node.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 class PcapFileInputNode : public BaseNode
 {
@@ -105,6 +105,6 @@ private:
     std::shared_ptr<TokenList> out_token_list_;
 };
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END
 
 #endif // !TS_TRANSMIT_INTERNAL_NOTE_PCAP_FILE_INPUT_H_

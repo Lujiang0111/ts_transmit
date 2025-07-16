@@ -5,7 +5,7 @@
 #include "lccl/utils/class_utils.h"
 #include "ts_transmit.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 inline void *CoreMalloc(size_t size)
 {
@@ -66,6 +66,6 @@ bool operator!=(const CoreAllocator<T> &, const CoreAllocator<U> &) noexcept
     return false;
 }
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END
 
 #endif // !TS_TRANSMIT_INTERNAL_UTILS_ALLOC_CORE_H_

@@ -4,10 +4,10 @@
 #include <memory>
 #include "ts_transmit_c.h"
 
-#define TSTM_BEGIN_NAMESPACE namespace tstm {
-#define TSTM_END_NAMESPACE }
+#define TSTM_NAMESPACE_BEGIN namespace tstm {
+#define TSTM_NAMESPACE_END }
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 class ITransmitter
 {
@@ -19,6 +19,6 @@ public:
 
 TSTM_API std::shared_ptr<ITransmitter> CreateTransmitter(const char *json_param);
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END
 
 #endif // !TS_TRANSMIT_INCLUDE_TS_TRANSMIT_H_

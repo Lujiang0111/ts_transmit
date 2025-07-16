@@ -4,7 +4,7 @@
 #include "lccl/socket.h"
 #include "node/base_node.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 class UdpOutputNode : public BaseNode
 {
@@ -60,6 +60,6 @@ private:
     int64_t next_send_time_;
 };
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END
 
 #endif // !TS_TRANSMIT_INTERNAL_NOTE_UDP_OUTPUT_H_

@@ -4,7 +4,7 @@
 #include "lccl/log.h"
 #include "ts_transmit.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 void LibLogContent(int level, const char *file_name, int file_line, const char *content, size_t len);
 
@@ -15,7 +15,7 @@ inline void LibLogFmt(int level, const char *file_name, int file_line, fmt::form
     LibLogContent(level, file_name, file_line, content.c_str(), content.length());
 }
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END
 
 #define TSTM_LOG(level, fmt, ...) tstm::LibLogFmt(level, __FILE__, __LINE__, fmt, ##__VA_ARGS__)
 #define TSTM_ID_LOG(level, fmt, ...) tstm::LibLogFmt(level, __FILE__, __LINE__, "[{}], "#fmt, id, ##__VA_ARGS__)

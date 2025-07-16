@@ -4,7 +4,7 @@
 #include <chrono>
 #include "ts_transmit.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 constexpr int64_t kUsInNs = 1000LL;
 constexpr int64_t kMsInNs = 1000LL * kUsInNs;
@@ -37,6 +37,6 @@ private:
 // 高精度sleep, sleep_ns需要小于kSecInNs
 void ExactSleep(int64_t sleep_ns);
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END
 
 #endif // !TS_TRANSMIT_INTERNAL_UTILS_UTILS_H_

@@ -4,7 +4,7 @@
 #include <functional>
 #include "ts_transmit.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 class TokenData
 {
@@ -36,6 +36,6 @@ private:
     uint8_t *buf_;
 };
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END
 
 #endif // !TS_TRANSMIT_INTERNAL_TOKEN_TOKEN_DATA_H_

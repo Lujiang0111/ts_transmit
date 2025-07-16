@@ -2,7 +2,7 @@
 #include "utils/utils.h"
 #include "transmitter.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 Transmitter::Transmitter() :
     sleep_ns_(kMsInNs),
@@ -119,4 +119,4 @@ void Transmitter::WorkThread()
     }
 }
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END

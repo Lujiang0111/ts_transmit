@@ -2,7 +2,7 @@
 #include "node/udp_output.h"
 #include "utils/lib_log.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 BaseNode::BaseNode(const std::string &name, const std::string &id) :
     name_(name),
@@ -81,4 +81,4 @@ std::shared_ptr<BaseNode> CreateNode(const std::string &id, const rapidjson::Val
     return node;
 }
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END

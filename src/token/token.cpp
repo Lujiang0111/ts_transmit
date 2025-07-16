@@ -1,6 +1,6 @@
 ﻿#include "token/token.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 Token::Token() :
     data_(nullptr)
@@ -54,4 +54,4 @@ void Token::SetProperty(Props type, int64_t value)
     props_[static_cast<size_t>(type)] = value;
 }
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END

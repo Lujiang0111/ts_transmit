@@ -8,7 +8,7 @@
 #include "ts_transmit.h"
 #include "node/base_node.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 class Transmitter : public ITransmitter
 {
@@ -38,6 +38,6 @@ private:
     bool work_thread_running_;
 };
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END
 
 #endif // !TS_TRANSMIT_INTERNAL_TRANSMITTER_H_

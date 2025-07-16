@@ -6,7 +6,7 @@
 
 #include "utils/utils.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 Utils::Utils() :
     init_time_(std::chrono::steady_clock::now())
@@ -54,4 +54,4 @@ void ExactSleep(int64_t sleep_ns)
 #endif
 }
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END

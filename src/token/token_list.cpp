@@ -1,7 +1,7 @@
 ﻿#include "token/token_list.h"
 #include "utils/alloc_core.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 TokenList::TokenList() :
     size_(0)
@@ -88,4 +88,4 @@ size_t TokenList::Size() const
     return size_;
 }
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END

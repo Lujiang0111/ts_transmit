@@ -1,7 +1,7 @@
 ﻿#include "node/udp_output.h"
 #include "utils/utils.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 constexpr int64_t kBufferTime = 50 * kMsInNs;
 constexpr size_t kMaxBufferToken = 1000;
@@ -252,4 +252,4 @@ bool UdpOutputNode::InitSocket()
     return true;
 }
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END

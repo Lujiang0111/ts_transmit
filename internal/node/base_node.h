@@ -7,7 +7,7 @@
 #include "utils/lib_log.h"
 #include "utils/utils.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 class BaseNode
 {
@@ -38,7 +38,7 @@ private:
 
 std::shared_ptr<BaseNode> CreateNode(const std::string &id, const rapidjson::Value &node_val);
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END
 
 #define TSTM_NODE_LOG(level, fmt, ...) tstm::LibLogFmt(level, __FILE__, __LINE__, "node[{}, {}], "#fmt, GetName(), GetId(), ##__VA_ARGS__)
 

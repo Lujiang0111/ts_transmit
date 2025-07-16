@@ -2,7 +2,7 @@
 #include "token/token_data.h"
 #include "utils/alloc_core.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 TokenData::TokenData(size_t size, AllocFunc alloc_func, FreeFunc free_func, void *opaque) :
     alloc_func_(alloc_func),
@@ -50,4 +50,4 @@ size_t TokenData::Size() const
     return size_;
 }
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END

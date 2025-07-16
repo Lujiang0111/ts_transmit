@@ -5,7 +5,7 @@
 #include <functional>
 #include "token/token.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 class TokenList
 {
@@ -46,6 +46,6 @@ private:
     size_t size_;
 };
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END
 
 #endif // !TS_TRANSMIT_INTERNAL_TOKEN_TOKEN_LIST_H_

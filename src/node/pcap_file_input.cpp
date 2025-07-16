@@ -1,6 +1,6 @@
 ﻿#include "node/pcap_file_input.h"
 
-TSTM_BEGIN_NAMESPACE
+TSTM_NAMESPACE_BEGIN
 
 constexpr size_t kPcapGlobalHeaderSize = 24;
 constexpr size_t kPcapPacketHeaderSize = 24;
@@ -475,4 +475,4 @@ bool PcapFileInputNode::IsHint()
     return false;
 }
 
-TSTM_END_NAMESPACE
+TSTM_NAMESPACE_END
